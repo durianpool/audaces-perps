@@ -36,5 +36,6 @@ pm2 startup
 pm2 install pm2-metrics
 
 # Start crankers
-cd  $HOME/audaces-perps/cranker/pm2/ && pm2 start crank_garbage_collect crank_liquidate liquidation_cleanup
-cd  $HOME/audaces-perps/cranker/pm2/ && pm2 stop crank_funding crank_funding_extraction
+cd  $HOME/audaces-perps/cranker/pm2
+pm2 start crank_garbage_collect crank_liquidate liquidation_cleanup
+pm2 stop crank_funding crank_funding_extraction

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm $0
+
 # Install packages
 apt-get update && apt-get upgrade -y  
 apt-get install libssl-dev libudev-dev build-essential pkg-config curl -y

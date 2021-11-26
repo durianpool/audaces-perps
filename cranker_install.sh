@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install packages
-apt-get update && apt-get upgrade 
-apt-get install libssl-dev libudev-dev build-essential pkg-config curl
+apt-get update && apt-get upgrade -y  
+apt-get install libssl-dev libudev-dev build-essential pkg-config curl -y
 
 # Prepare Node install
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
